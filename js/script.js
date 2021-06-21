@@ -80,3 +80,10 @@ function myFunction() {
     const nameCaps = varName.charAt(0).toUpperCase() + varName.slice(1)
     alert("Hey " + nameCaps + ". Thank you for reaching out to us.\nWe have received your message.\SHave a nice day");
 }
+
+
+
+
+
+
+© 2021 GitHub
