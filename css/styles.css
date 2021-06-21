@@ -9,7 +9,7 @@ import url("https://fonts.googleapis.com/css?family=Cute+Font|Merienda");
     padding-top: 14%;
     margin-bottom: 9%;
 }
-#hed {
+#head {
     background-image: url('../images/h_img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,6 +42,7 @@ h6 {
 }
 h1 {
     font-family: 'Akronim', cursive;
+    text-align: center;
 }
 #service {
     background-image: url('../images/s_image.jpg');
@@ -56,14 +57,6 @@ h1 {
 }
 .specific {
     margin-bottom: 4%;
-}
-.image1 {
-    padding-top: 9%;
-    margin-bottom: 3%;
-}
-.image2 {
-    margin-top: 20%;
-    padding: 35px 0;
 }
 .sermain {
     margin-top: 15%;
