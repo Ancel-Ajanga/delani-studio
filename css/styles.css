@@ -1,172 +1,179 @@
-import url("https://fonts.googleapis.com/css?family=Cute+Font|Merienda");
-@import url("https://fonts.googleapis.com/css?family=Akronim");
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Poiret+One|Raleway|Ubuntu+Mono&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
 }
-#first {
-    padding-top: 14%;
-    margin-bottom: 9%;
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
 }
-#head {
-    background-image: url('../images/h_img.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 668px;
+}
+
+.overlay > img, .h-text {
     position: relative;
+    top: 33%;
 }
-h6 {
-    height: 1vh;
+.h-text{
+    font-family: 'Comfortaa', cursive;
 }
-#about {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.smaller-text{
+    font-family: 'Ubuntu Mono', monospace;
 }
-.resize {
-    font-size: cal(1vh + 1vw + .5vmin);
-}
-#about,
-#service,
-#pple,
-.specific,
-#contact,
-.footer p {
-    font-family: 'Merienda', cursive;
-}
-.col-md-12 {
-    width: 100%;
-    color: #fff;
-    font-family: 'Akronim', cursive;
-    font-size: calc(1vw + 1vh + .5vmin);
-    font-size: 1.1em;
-}
-h1 {
-    font-family: 'Akronim', cursive;
-    text-align: center;
-}
-#service {
-    background-image: url('../images/s_image.jpg');
-    color: #fff;
-    margin-bottom: 50px;
-    background-position: center;
-    padding-top: 120px;
-    padding-bottom: 80px;
-}
-.card-deck {
-    padding: 1% 4%;
-}
-.specific {
-    margin-bottom: 4%;
-}
-.sermain {
-    margin-top: 15%;
-}
-.hide {
-    display: none;
-}
-.form-cont input {
-    width: 49%;
-    background: transparent;
-}
-.form-cont textarea {
-    margin-top: 10px;
-    width: 100%;
-    background: transparent;
-}
-#contact {
-    padding-top: 100px;
-    margin-bottom: 50px;
-    background-image: url('../images/c_image.jpg');
-    background-size: cover;
-    background-position: cover;
-    width: 100%;
-    max-width: 100%;
-    margin-top: 10%;
-}
-.footer {
-    margin-top: 30px;
-}
-.form-cont {
-    text-align: center;
-    position: relative;
-    width: 700px;
-    max-width: 100%;
-    left: 50%;
-    transform: translate(-50%);
-}
-::placeholder,
-.con {
-    color: #fff;
-}
-::placeholder{
-    font-size: 10px;
-}
-.con {
-    padding-bottom: 30px;
-}
-.what {
+.overlay > img, .welcome {
     margin-bottom: 30px;
 }
-#meso {
-    background-color: transparent;
+
+.click {
+    margin-top: 330px;
 }
-.social img {
-    border-radius: 50%;
-    transition: 0.2s ease-out;
+
+.jumbotron-fluid {
+    background-image: url("../images/h_img.jpg");
+    background-size: cover;
+    height: 668px;
 }
-.social img:hover {
-    box-shadow: 0 0 20px rgb(0, 0, 0);
-    margin: -3px;
-    padding: 3px;
-    background: yellowgreen;
+#bounce {
+    animation: bounce 3s infinite;
 }
-#portfolio img {
-    width: 100%;
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-55px);
+    }
+    60% {
+        transform: translateY(-45px);
+    }
 }
-.card {
-    margin: 10px 0;
+
+.about {
+    height: 250px;
+}
+
+.about h1 {
+    margin-top: 30px;
+}
+
+.services {
+    background-image: url("../images/s_image.jpg");
+    height: 280px;
+}
+
+.services h1 {
     position: relative;
-    overflow: hidden;
+    top: 30px;
+    margin-bottom: 20px;
 }
-.card:hover img {
-    transform: scale(1.2);
-    transition: all 0.3s ease;
+
+.small-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 280px;
 }
-.card-1 {
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    background: rgba(0, 0, 0, 0.582);
-    cursor: pointer;
-    display: none;
-    transition: all 0.5s ease;
+
+
+.what-we-do h1 {
+    margin-top: 30px;
 }
-.ptag {
-    padding: 5% 0;
+figcaption{
+    margin-top: 20px;
+}
+
+.portfolio {
+    /*height: 650px;*/
+    padding-bottom: 50px;
+}
+
+.contacts {
+    background-image: url("../images/c_image.jpg");
+    background-size: cover;
+}
+
+.contacts h1 {
+    position: relative;
+    top: 30px;
+}
+.text{
+    margin-bottom: 20px;
+}
+
+.contact-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-control{
+    background-color: #66000000;
     color: white;
-    background-color: rgba(0, 0, 0, 0.301);
-    padding: 50px 10px;
-    font-weight: 100%;
-    padding-top: 30px;
-    border: 4px solid whitesmoke;
-    font-size: 1.1em;
-    line-height: 90%;
-    margin: 20% 5%;
-    overflow: hidden;
-    letter-spacing: 2px;
-    font-family: 'Merienda', cursive;
 }
-@media screen and (max-width:450px) {
-    .form-cont input {
-        width: 100%;
-        margin-top: 10px;
-    } 
-    body{
-        overflow-x: hidden;
-    }
+.input{
+    margin-top: 30px;
 }
-@media screen and (max-width:1024px) {
-    * {
-        font-size: calc(1vw + 1vh + .5vmin);
-    }
+.b-text{
+    font-family: 'Comfortaa', cursive;
+}
+.m-text{
+    font-family: 'Raleway', sans-serif;
+}
+.name{
+    margin-right: 5px;
+}
+input.error {
+    border: 1px dashed red;
+    font-weight: 300;
+    color: red;
+}
+.email{
+    margin-right: 5px;
+}
+.social{
+    justify-content:center;
+    padding-left:10px;
+    padding-right:10px;
+}
+.white{
+    height: 300px;
+    width: 366px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.portimg {
+    float: right;
+    position: relative;
+    margin: 5px;
+    /*color: #333;*/
+}
+.portimg .porttext {
+    display: none;
+    opacity: 1;
+    background-color:rgba(255, 255, 255, 0.6);
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    color: deepskyblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+    height: 100%;
+}
+textarea::placeholder{
+    color: #ffffff;
 }
