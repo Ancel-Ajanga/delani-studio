@@ -45,29 +45,35 @@
         <div class="col-md-12">
             <div class="row">
                 <figure class="col-md-4">
-                    <img src="images/design_icon.png" alt="services-icons" class="service-icons des">
+                    <img id="desImg"src="images/design_icon.png" alt="services-icons" class="service-icons des" onclick="display1()">
                     <figcaption id="destxt" class="b-text">DESIGN</figcaption>
                     <br>
-                    <p id="desp" class="b-text">Our design practice offers a full range of services including brand strategy,
+                    <p id="desp" class="b-text" onclick="display2()">Our design practice offers a full range of services including brand strategy,
                         interaction and
                         visual design and user experience testing.
                         Throughout your project, our designers create and implement visual design and workflows, solicit
                         user feedback and work with you to make sure what gets built is what is needed.</p>
                 </figure>
+                <script>
+
+
+                </script>
+
+
                 <figure class="col-md-4">
-                    <img src="images/dev_icon.png" alt="services-icons" class="service-icons dev">
+                    <img id="devImg"src="images/dev_icon.png" alt="services-icons" class="service-icons dev" onclick="display3()">
                     <figcaption id="devtext" class="b-text">DEVELOPMENT</figcaption>
                     <br>
-                    <p id="devp" class="b-text">All engineers are fluent in the latest enterprise, mobile and web development
+                    <p id="devp" class="b-text" onclick="display4()">All engineers are fluent in the latest enterprise, mobile and web development
                         technologies.
                         They collaborate with your team to write, and improve code on a daily basis, using proven
                         practices such as test-driven development and pair programming.</p>
                 </figure>
                 <figure class="col-md-4">
-                    <img src="images/product_icon.png" alt="services-icons" class="service-icons pro">
+                    <img id="propImg"src="images/product_icon.png" alt="services-icons" class="service-icons pro" onclick="display5()">
                     <figcaption id="protext" class="b-text">PRODUCT DESIGN</figcaption>
                     <br>
-                    <p id="prop" class="b-text">Planning and development is iterative. Because we are constantly coding and testing,
+                    <p id="prop" class="b-text" onclick="display6()">Planning and development is iterative. Because we are constantly coding and testing,
                         the products
                         we build are always ready to go live.
                         This iterative process allows for changes as business requirements evolve.</p>
@@ -83,9 +89,12 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-2">
                     <div class="portimg">
-                        <img src="images/work4.jpg" alt="portfolio-images" class="image img-fluid">
+                        
+                        <img id="ima"   src="images/work4.jpg" alt="portfolio-images" class="image img-fluid">
+
+
                         <div>
-                            <div class="porttext" style="display:none"> Delani Studio</div>
+                            <div class="porttext" > Delani Studio</div>
                         </div>
                     </div>
                 </div>
@@ -93,7 +102,7 @@
                     <div class="portimg">
                         <img src="images/work3.jpg" alt="portfolio-images" class="image img-fluid">
                         <div>
-                            <div class="porttext" style="display:none">Delani Studio</div>
+                            <div class="porttext" >Delani Studio</div>
                         </div>
                     </div>
                 </div>
@@ -101,7 +110,7 @@
                     <div class="portimg">
                         <img src="images/work2.jpg" alt="portfolio-images" class="image img-fluid">
                         <div>
-                            <div class="porttext" style="display:none">Delani Studio</div>
+                            <div class="porttext" >Delani Studio</div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +118,7 @@
                     <div class="portimg">
                         <img src="images/work1.jpg" alt="portfolio-images" class="image img-fluid">
                         <div class="disc1">
-                            <div class="porttext" style="display:none">Delani Studio</div>
+                            <div class="porttext" >Delani Studio</div>
                         </div>
                     </div>
                 </div>
@@ -121,25 +130,25 @@
                 <div class="col-md-2">
                     <div class="portimg">
                         <img src="images/work5.jpg" alt="portfolio-images" class="image img-fluid">
-                        <div class="porttext" style="display:none">Delani Studio</div>
+                        <div class="porttext" >Delani Studio</div>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="portimg">
                         <img src="images/work6.jpg" alt="portfolio-images" class="image img-fluid">
-                        <div class="porttext" style="display:none">Delani Studio</div>
+                        <div class="porttext" >Delani Studio</div>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="portimg">
                         <img src="images/work7.jpg" alt="portfolio-images" class="image img-fluid">
-                        <div class="porttext" style="display:none">Delani Studio</div>
+                        <div class="porttext" >Delani Studio</div>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="portimg">
                         <img src="images/work8.jpg" alt="portfolio-images" class="image img-fluid">
-                        <div class="porttext" style="display:none">Delani Studio</div>
+                        <div class="porttext" >Delani Studio</div>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
@@ -205,4 +214,5 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
 <script src="js/script.js"></script>
 <script src="js/mailchimp.js"></script>
+<script src=display.js></script>
 </html>
